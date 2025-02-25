@@ -14,24 +14,22 @@ public class BicicletaElectrica extends Vehiculo {
         }
     }
 
+
+    // si no es manual llamas a super
     public void mover() {
-        if (modoManual) {
             setEstado(EN_MOVIMIENTO);
             System.out.println("Modo manual activado");
             cargarBateria();
-        } else {
-            super.mover();
-        }
+
     }
 
-
+    // si no es manual llamas a super
     public void acelerar() {
-        if (modoManual) {
             setVelocidad(getVelocidad() + 10);
             setBateria(getBateria() + 10);
-        } else {
+
             super.acelerar();
-        }
+
 
 
     }

@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2292eb20-05dd-40aa-8d71-d390680eb880" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/AutoAutonomo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/BicicletaElectrica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/IEncendible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/IEstados.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/IMovible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/TransporteAutonomo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/smartcity/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/smartcity/BicicletaElectrica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/smartcity/BicicletaElectrica.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +90,7 @@
       <workItem from="1740409673763" duration="32000" />
       <workItem from="1740409767702" duration="51000" />
       <workItem from="1740410174188" duration="10000" />
+      <workItem from="1740499456326" duration="167000" />
     </task>
     <servers />
   </component>
