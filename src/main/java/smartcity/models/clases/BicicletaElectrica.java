@@ -1,4 +1,4 @@
-package smartcity;
+package smartcity.models.clases;
 
 public class BicicletaElectrica extends Vehiculo {
     private boolean modoManual;
@@ -14,22 +14,24 @@ public class BicicletaElectrica extends Vehiculo {
         }
     }
 
+    public boolean isModoManual() {
+        return modoManual;
+    }
+
 
     // si no es manual llamas a super
-    public void mover() {
-            setEstado(EN_MOVIMIENTO);
-            System.out.println("Modo manual activado");
-            cargarBateria();
-
+    public String mover() {
+        setEstado(EN_MOVIMIENTO);
+        System.out.println("Modo manual activado");
+        cargarBateria();
+        return "Bicicleta en movimiento";
     }
 
     // si no es manual llamas a super
     public void acelerar() {
-            setVelocidad(getVelocidad() + 10);
-            setBateria(getBateria() + 10);
-
-            super.acelerar();
-
+        setVelocidad(getVelocidad() + 10);
+        if (getBateria() < 100) setBateria(getBateria() + 10);
+//        super.acelerar();
 
 
     }

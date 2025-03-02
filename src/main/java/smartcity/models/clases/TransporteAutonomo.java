@@ -1,4 +1,4 @@
-package smartcity;
+package smartcity.models.clases;
 
 public class TransporteAutonomo extends Vehiculo {
     public void encender() {

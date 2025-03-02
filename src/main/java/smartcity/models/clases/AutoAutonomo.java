@@ -1,4 +1,6 @@
-package smartcity;
+package smartcity.models.clases;
+
+import smartcity.models.clases.Vehiculo;
 
 public class AutoAutonomo extends Vehiculo {
     public boolean pilotoAutomatico;
