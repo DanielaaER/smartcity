@@ -17,7 +17,7 @@ public class VistaVehiculo extends JFrame {
     public VistaVehiculo() {
         setContentPane(panelPrincipal);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(750, 450);
+        setSize(800, 500);
         setLocationRelativeTo(null);
         setTitle("Gestión de Transporte Inteligente");
         setResizable(false);

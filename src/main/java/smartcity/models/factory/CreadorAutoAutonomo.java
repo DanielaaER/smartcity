@@ -1,7 +1,6 @@
 package smartcity.models.factory;
 
 import smartcity.models.clases.AutoAutonomo;
-import smartcity.models.clases.BicicletaElectrica;
 import smartcity.models.clases.Vehiculo;
 
 // Creadores Concretos

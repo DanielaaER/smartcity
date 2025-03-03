@@ -4,5 +4,6 @@ public interface IMovible {
     public String mover();
     public void acelerar();
     public void frenar();
-    public void estacionar();
+
+    public void desacelerar();
 }

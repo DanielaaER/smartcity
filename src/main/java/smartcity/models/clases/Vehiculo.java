@@ -47,20 +47,13 @@ public abstract class Vehiculo implements IEncendible, IMovible, IEstados {
         return state;
     }
 
-    public void enEspera() {
-        setEstado(EN_ESPERA);
-        setVelocidad(0);
-    }
-
-    public void estacionar() {
-        setEstado(APAGADO);
-        setVelocidad(0);
-    }
 
     public void acelerar() {
+        System.out.println("get estado: " + getEstado());
         if (getEstado() == EN_MOVIMIENTO) {
             setVelocidad(getVelocidad() + 10);
             setBateria(getBateria() - 10);
+            System.out.println("bateria: " + getBateria());
         }
     }
     public void desacelerar() {
@@ -105,10 +98,6 @@ public abstract class Vehiculo implements IEncendible, IMovible, IEstados {
 
     public void setVelocidad(int velocidad) {
         sensor.setVelocidad(velocidad);
-    }
-
-    public void actualizarEstado() {
-        sensor.actualizarEstado();
     }
 
 

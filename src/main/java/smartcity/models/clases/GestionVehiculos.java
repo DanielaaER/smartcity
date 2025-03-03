@@ -1,6 +1,5 @@
-package smartcity.models;
+package smartcity.models.clases;
 
-import smartcity.models.clases.Vehiculo;
 import smartcity.models.factory.CreadorVehiculo;
 
 public class GestionVehiculos {

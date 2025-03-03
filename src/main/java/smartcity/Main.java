@@ -1,10 +1,7 @@
-package smartcity.models;
+package smartcity;
 
 import smartcity.controllers.ControladorVehiculo;
-import smartcity.models.clases.AutoAutonomo;
-import smartcity.models.clases.BicicletaElectrica;
-import smartcity.models.clases.TransporteAutonomo;
-import smartcity.models.clases.Vehiculo;
+import smartcity.models.clases.GestionVehiculos;
 import smartcity.view.VistaVehiculo;
 
 public class Main {

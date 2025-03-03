@@ -29,6 +29,7 @@ public class BicicletaElectrica extends Vehiculo {
 
     // si no es manual llamas a super
     public void acelerar() {
+        System.out.println("get estado bici: " + getEstado());
         setVelocidad(getVelocidad() + 10);
         if (getBateria() < 100) setBateria(getBateria() + 10);
 //        super.acelerar();

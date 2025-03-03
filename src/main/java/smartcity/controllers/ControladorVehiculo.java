@@ -1,10 +1,10 @@
 package smartcity.controllers;
 
-import smartcity.models.*;
-import smartcity.models.clases.BicicletaElectrica;
-import smartcity.models.clases.Sensor;
-import smartcity.models.clases.Vehiculo;
-import smartcity.models.factory.*;
+import smartcity.models.clases.*;
+import smartcity.models.factory.CreadorAutoAutonomo;
+import smartcity.models.factory.CreadorBicicletaElectrica;
+import smartcity.models.factory.CreadorTransporteAutonomo;
+import smartcity.models.factory.CreadorVehiculo;
 import smartcity.view.VistaVehiculo;
 
 import java.awt.event.ActionEvent;
@@ -137,20 +137,24 @@ public class ControladorVehiculo {
                         vista.actualizarEstadoBotones(false, false);
                     } else {
                         if (gestionVehiculos.getVehiculo() instanceof BicicletaElectrica) {
-                            if (!((BicicletaElectrica) gestionVehiculos.getVehiculo()).isModoManual()) {
+                            BicicletaElectrica bicicleta = (BicicletaElectrica) gestionVehiculos.getVehiculo(); // 🔽 Downcasting explícito
 
-                                Vehiculo vehiculo = gestionVehiculos.getVehiculo();
-                                vehiculo.acelerar();
+                            if (!bicicleta.isModoManual()) {
+                                // 🔼 Upcasting forzado a Vehiculo
+                                Vehiculo vehiculoComoBicicleta = (Vehiculo) bicicleta;
+                                vehiculoComoBicicleta.acelerar();
                                 System.out.println("Modo manual desactivado");
-                                vista.mostrarMensaje("Vehículo acelerado.");
                             } else {
-                                gestionVehiculos.getVehiculo().acelerar();
-                                vista.mostrarMensaje("Bicileta acelerada.");
+                                bicicleta.acelerar();
+                                System.out.println("Modo manual activado");
+                                vista.mostrarMensaje("Bicicleta acelerada.");
                             }
                         } else {
                             gestionVehiculos.getVehiculo().acelerar();
                             vista.mostrarMensaje("Vehículo acelerado.");
                         }
+
+
                     }
                 } else {
                     vista.mostrarMensaje("Seleccione un vehículo primero.");
