@@ -23,30 +23,9 @@ public class VistaVehiculo extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
-
-        // Componentes
-//        tiposVehiculos = new JComboBox<>(new String[]{"Auto Autónomo", "Bicicleta Eléctrica", "Transporte Autónomo"});
-//        encenderButton = new JButton("Encender");
-//        apagarButton = new JButton("Apagar");
-////        moverButton = new JButton("Mover");
-//        frenarButton = new JButton("Frenar");
-//        acelerarButton = new JButton("Acelerar");
-//        desacelerarButton = new JButton("Desacelerar");
-//        mostrarSensorButton = new JButton("Mostrar Estado del Sensor");
         txtArea = new JTextArea(10, 30);
         txtArea.setEditable(false);
 
-        // Añadir componentes
-
-//        add(new JLabel("Selecciona un vehículo:"));
-//        add(tiposVehiculos);
-//        add(encenderButton);
-//        add(apagarButton);
-//        add(moverButton);
-//        add(btnFrenar);
-//        add(btnAcelerar);
-//        add(btnDesacelerar);
-//        add(mostrarSensorButton);
         add(new JScrollPane(txtArea));
 
         // Inicialmente ocultar botones que dependen del movimiento
